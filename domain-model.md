@@ -13,7 +13,7 @@
 - in li  class=card, create h2 and add an attribute "class=card--title"
 - add h2 class=card--title html.innerText = "name" (data[i].name)
 - create img and add an attribute "class=card--img", "width=256"
-- add src to img (data[i][other][official-artwork][front_default])
+- add src to img (data[0].sprites.other["official-artwork"]["front_default"])
 - append h2, img to li class=card as a child
 - create ul and add an attribute "class=card--text"
 - create a for loop and generate li 6 times
