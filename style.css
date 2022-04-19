@@ -58,6 +58,8 @@ h2 {
   padding: 1rem;
 
   border-radius: 5px;
+  
+  list-style: none;
 }
 
 .card--img {
