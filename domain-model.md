@@ -1,4 +1,4 @@
-## Requirements
+## Requirements (Basic criteria)
 - The `data.js` file contains a global array that contains information on different pokemon types
 - Inside `index.js`, you should loop through this array and render a "card" for each pokemon type.
 - You will also find an HTML example commented out in the `index.html`

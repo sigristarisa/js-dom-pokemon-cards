@@ -1,3 +1,4 @@
+console.log(data[0])
 const cards = document.querySelector(".cards")
 
 for(let i = 0; i < data.length; i++) {
@@ -22,9 +23,19 @@ for(let i = 0; i < data.length; i++) {
         cardTexts.appendChild(text)
     }
 
+    const versionTexts = document.createElement("ul")
+    versionTexts.innerText = "APPEARED IN :"
+    versionTexts.setAttribute("class", "card--text")
+    for(let k = 0; k < data[i]["game_indices"].length; k++) {
+       const text = document.createElement("li")
+       text.innerText = data[i]["game_indices"][k].version.name
+       versionTexts.appendChild(text)
+    }
+
     card.append(pokemonName)
     card.append(img)
     card.append(cardTexts)
+    card.append(versionTexts)
 
     cards.appendChild(card)
 }
