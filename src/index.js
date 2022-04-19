@@ -18,7 +18,7 @@ for(let i = 0; i < data.length; i++) {
 
     for(let j = 0; j < 6; j++) {
         const text = document.createElement("li")
-        text.innerText = (data[i].stats[j].stat.name).toUpperCase() + " : " + data[i].stats[j]["base_stat"]
+        text.innerText = `${data[i].stats[j].stat.name.toUpperCase()} : ${data[i].stats[j]["base_stat"]}`
         cardTexts.appendChild(text)
     }
 
