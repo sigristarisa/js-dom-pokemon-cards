@@ -1,7 +1,3 @@
-//You can start simple and just render a single 
-//pokemon card from the first element
-console.log(data[0]);
-
 const cards = document.querySelector(".cards")
 
 for(let i = 0; i < data.length; i++) {
@@ -10,7 +6,7 @@ for(let i = 0; i < data.length; i++) {
 
     const pokemonName = document.createElement("h2")
     pokemonName.setAttribute("class", "card--title")
-    pokemonName.innerText = data[i].name
+    pokemonName.innerText = data[i].name[0].toUpperCase() + data[i].name.slice(1)
 
     const img = document.createElement("img")
     img.setAttribute("class", "card--img")
@@ -22,7 +18,7 @@ for(let i = 0; i < data.length; i++) {
 
     for(let j = 0; j < 6; j++) {
         const text = document.createElement("li")
-        text.innerText = data[i].stats[j].stat.name + " : " + data[i].stats[j]["base_stat"]
+        text.innerText = (data[i].stats[j].stat.name).toUpperCase() + " : " + data[i].stats[j]["base_stat"]
         cardTexts.appendChild(text)
     }
 
