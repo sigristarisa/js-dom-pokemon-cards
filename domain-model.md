@@ -8,17 +8,17 @@
 - Render all the cards on the page that represents all the pokemons, recreating the same layout, using JS
 
 ## Domain Models
-- create <li> and add an attribute "class=card"
-- append <li class=card> to <ul class="cards"> as a child
-- in <li  class=card>, create <h2> and add an attribute "class=card--title"
-- add <h2 class=card--title> html.innerText = "name" (data[i].name)
-- create <img> and add an attribute "class=card--img", "width=256"
-- add src to <img> (data[i][other][official-artwork][front_default])
-- append <h2>, <img> to <li class=card> as a child
-- create <ul> and add an attribute "class=card--text"
-- create a for loop and generate <li> 6 times
--  each <li> will have innerText = stats[i].stat.name: states[i][base_stat]
--  append all <li> to <ul class=card--text>
+- create li and add an attribute "class=card"
+- append li class=card to ul class="cards" as a child
+- in li  class=card, create h2 and add an attribute "class=card--title"
+- add h2 class=card--title html.innerText = "name" (data[i].name)
+- create img and add an attribute "class=card--img", "width=256"
+- add src to img (data[i][other][official-artwork][front_default])
+- append h2, img to li class=card as a child
+- create ul and add an attribute "class=card--text"
+- create a for loop and generate li 6 times
+-  each li will have innerText = stats[i].stat.name: states[i][base_stat]
+-  append all li to ul class=card--text
 
  
 ### ideal structure
